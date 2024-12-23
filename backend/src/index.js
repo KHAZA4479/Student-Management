@@ -17,7 +17,7 @@ app.use(express.json());
 connectDB();
 
 // Routes
-app.use('https://student-management-jmxo.onrender.com/api/students', studentRoutes);
+app.use('/api/students', studentRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
